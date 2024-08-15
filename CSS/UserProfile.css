@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.top_navbar{
+  background: #FFC857;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.top_navbar .menu{
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.top_navbar .menu .logo{
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+.main_container .sidebar{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.main_container .sidebar .sidebar__inner{
+  position: relative;
+}
+
+.main_container .sidebar .profile {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.main_container .sidebar .profile .profile_img {
+  width: 125px;
+  margin: 0 auto 15px;
+}
+
+.main_container .sidebar .profile .profile_img img {
+  width: 100%;
+  display: block;
+}
+
+.main_container .sidebar .profile .profile_data .name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFC857;
+}
+
+.main_container .sidebar .profile .profile_data .role {
+  font-weight: 300;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.main_container .container{
+  margin-top: 60px;
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding: 30px;
+  transition: all 0.3s ease;
+	background-color: #FAFAFA;
+}
+
+.main_container .sidebar ul li a{
+  color: #FFC857;
+  font-size: 18px;
+  padding: 20px 30px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  transition: all 0.3s ease;
+}
+
+.main_container .sidebar ul li a .icon{
+  margin-right: 15px;
+  font-size: 28px;
+}
+
+.main_container .sidebar ul li a span{
+  display: inline-block;
+}
+
+.main_container .sidebar ul li a:hover,
+.main_container .sidebar ul li a.active{
+  background: #FFC857;
+  color: #000000;
+}
+
+
+
+
+.input,
+.msg .area{
+  width: 74%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #000000;
+  font-size: 16px;
+	font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+	background-color: #FAFAFA;
+}
+
+.login .input{
+  width: 35%;
+  float: left;
+  margin-right: 4%;
+	background-color: #FAFAFA;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #FFC857;
+}
+
+.input:hover,
+.msg .area:hover{
+  border: 2px solid #FFC857;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+
+.submit{
+  background-color: #000000;
+  color: #FFC857;
+  font-size: 15px;
+  padding: 20px 425px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #FFC857;
+	color: black;
+}
